@@ -1,0 +1,119 @@
+#include<stdio.h>
+int top=-1;
+#define SIZE 3
+int stack[SIZE];
+void push(int val)
+{
+  if (top!=SIZE-1){
+  stack[++top]=val;
+  printf("%d\n",stack[top]);
+}
+else{
+  printf("Overflow\n");
+}
+}
+void pop()
+{
+    if(top==-1){
+        printf("\nUnderflow");
+    }
+    else{
+        printf("%d\n",stack[top]);
+        stack[--top];
+    }
+}
+void traverse()
+{
+    for(int i=top;i!=-1;i--){
+        printf("%d\n",stack[i]);
+    }
+}
+void peek(){
+    printf("%d",stack[top]);
+}
+int main(){
+    push(5);
+    push(3);
+    push(7);
+    push(11);
+    pop();
+    pop();
+    pop();
+    pop();
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define SIZE 5
+int top = -1;
+int stack[SIZE];
+void push(int val)
+{
+    if(top!=SIZE-1)
+    {
+        stack[++top]=val;
+        printf("%d\n",stack[top]);
+    }
+    else{
+        printf("overflow\n");
+    }
+}
+void pop()
+{
+    if(top==-1)
+    {
+        printf("underflow\n");
+    }
+    else{
+        printf("%d\n",stack[top]);
+        stack[--top];
+    }
+}
+void peek()
+{
+ printf("%d\n",stack[top]);
+}
+void traverse()
+{
+    for(int i=top;i!=-1;i--)
+    {
+        printf("%d\n",stack[i]);
+    }
+}
+int main() {
+    push(1);
+    push(2);
+    push(3);
+    push(4);
+    push(5);
+    push(6);
+    peek();
+    pop();
+    pop();
+    pop();
+    pop();
+    pop();
+    pop();
+    
+
+    return 0;
+}

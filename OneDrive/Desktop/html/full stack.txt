@@ -1,0 +1,23 @@
+	User interface = frontend-engineers}full stack
+backend logic = backend engineer<->database}
+
+frontend
+    HTML-design web UI
+    CSS-add styles,web development
+    JS-adds behaviour/functioning
+    react JS-better to know
+    angular
+    vue.js
+    next.js
+    
+what is backend developement?
+	c#
+	java
+	python
+	GO
+	PHP
+	rust
+	node.js
+	javascript
+java+
+c#+react/
